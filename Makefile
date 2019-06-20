@@ -62,7 +62,8 @@ edk2.force: edk2/.git
 # If the edk2 directory doesn't exist, checkout a shallow branch of it
 # and build the various Dxe/Smm files
 edk2/.git:
-	git clone --depth 1 --branch UDK2018 https://github.com/linuxboot/edk2
+	#git clone --depth 1 --branch UDK2018 https://github.com/linuxboot/edk2
+	git clone --depth 1 --branch UDK2018 https://github.com/synackd/edk2
 
 
 $(BUILD)/Linux.ffs: $(KERNEL)
