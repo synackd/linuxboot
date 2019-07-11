@@ -11,7 +11,7 @@ dxe-compress := 0x4000000
 dxe-size     := 0x1000000
 
 
-dxe-path := $(BUILD)/rom/0x001D0000
+dxe-path := $(BUILD)/rom/0x00084000
 
 dxe-files := $(shell awk  \
 	'/^[0-9A-Fa-f]/ {print "$(dxe-path)/"$$1".ffs"}' \
