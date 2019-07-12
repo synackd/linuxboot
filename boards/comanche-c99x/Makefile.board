@@ -6,12 +6,12 @@
 # the different firmware images.
 #
 
-# 16 MB DXE ROM, compressed from 64 MB
-dxe-compress := 0x4000000
-dxe-size     := 0x1000000
+# 18 MB DXE ROM
+#dxe-compress := 0x4000000
+dxe-size     := 0x124016d
 
 
-dxe-path := $(BUILD)/rom/0x001d0000
+dxe-path := $(BUILD)/rom/0x00540055
 
 dxe-files := $(shell awk  \
 	'/^[0-9A-Fa-f]/ {print "$(dxe-path)/"$$1".ffs"}' \
@@ -24,14 +24,10 @@ dxe-files := $(shell awk  \
 # images with the LinuxBoot one.  Potentially we
 # can clean up more space.
 FVS := \
-$(BUILD)/rom/0x00000000.bin \
-$(BUILD)/rom/0x00090000.fv \
-$(BUILD)/rom/0x001d0000.fv \
+$(BUILD)/rom/0x000c0055.fv \
+$(BUILD)/rom/0x00340055.fv \
 $(BUILD)/dxe.vol \
-$(BUILD)/rom/0x00700000.fv \
-$(BUILD)/rom/0x00740000.bin \
-$(BUILD)/rom/0x00780000.fv \
-
+$(BUILD)/rom/0x00f300ff.fv \
 
 # Replace the DxeCore and SmmCore with our own
 $(BUILD)/dxe.vol: \
