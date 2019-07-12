@@ -25,12 +25,12 @@ dxe-files := $(shell awk  \
 # can clean up more space.
 FVS := \
 $(BUILD)/rom/0x00000000.bin \
-$(BUILD)/rom/0x0090000.fv \
+$(BUILD)/rom/0x00090000.fv \
+$(BUILD)/rom/0x001d0000.fv \
 $(BUILD)/dxe.vol \
-$(BUILD)/rom/0x0700000.fv \
-$(BUILD)/rom/0x0740000.bin \
-$(BUILD)/rom/0x0780000.fv \
-$(BUILD)/rom/0x0790000.bin \
+$(BUILD)/rom/0x00700000.fv \
+$(BUILD)/rom/0x00740000.bin \
+$(BUILD)/rom/0x00780000.fv \
 
 
 # Replace the DxeCore and SmmCore with our own
