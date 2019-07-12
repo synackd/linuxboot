@@ -11,7 +11,7 @@ dxe-compress := 0x4000000
 dxe-size     := 0x1000000
 
 
-dxe-path := $(BUILD)/rom/0x00084000
+dxe-path := $(BUILD)/rom/0x001d0000
 
 dxe-files := $(shell awk  \
 	'/^[0-9A-Fa-f]/ {print "$(dxe-path)/"$$1".ffs"}' \
@@ -36,7 +36,6 @@ $(BUILD)/rom/0x0790000.bin \
 # Replace the DxeCore and SmmCore with our own
 $(BUILD)/dxe.vol: \
 	$(BUILD)/DxeCore.ffs \
-	$(BUILD)/PiSmmCore.ffs \
+	$(dxe-files) \
 	$(BUILD)/Linux.ffs \
 	$(BUILD)/Initrd.ffs \
-	$(dxe-files) \
