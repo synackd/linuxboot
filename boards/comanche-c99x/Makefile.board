@@ -24,10 +24,12 @@ dxe-files := $(shell awk  \
 # images with the LinuxBoot one.  Potentially we
 # can clean up more space.
 FVS := \
+$(BUILD)/rom/0x00000000.bin \
 $(BUILD)/rom/0x000c0055.fv \
 $(BUILD)/rom/0x00340055.fv \
 $(BUILD)/dxe.vol \
-$(BUILD)/rom/0x00f300ff.fv \
+$(BUILD)/rom/0x00f30055.fv \
+$(BUILD)/rom/0x00f70055.bin \
 
 # Replace the DxeCore and SmmCore with our own
 $(BUILD)/dxe.vol: \
