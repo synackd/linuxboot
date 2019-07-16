@@ -117,6 +117,7 @@ $(BUILD)/$(BOARD).txt: $(ROM)
 	cd $(BUILD) ; \
 	$(pwd)/bin/extract-firmware \
 		-o rom \
+		$(EXTRACT_FW_OPTS) \
 	) < $^ \
 	> $@.tmp
 	mv $@.tmp $@
