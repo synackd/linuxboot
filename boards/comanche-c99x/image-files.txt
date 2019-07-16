@@ -59,7 +59,7 @@ de371f7c-dec4-4d21-adf1-593abcc15882 ArmGicDxe
 628a497d-2bf6-4264-8741-069dbd3399d6 ConSplitter
 8f2c127e-117d-484b-8a44-fbd911be125e IpmiRedirFru
 b8d9777e-d72a-451f-9bdb-bafb52a68415 ArmCpuDxe
-d6a2cb7f-6a18-4e2f-b43b-9920a733700a DxeCore
+#d6a2cb7f-6a18-4e2f-b43b-9920a733700a DxeCore
 f099d67f-71ae-4c36-b2a3-dceb0eb2b7d8 WatchdogTimer
 0718ad81-f26a-4850-a6ec-f268e309d707 Tpm20PlatformDxe
 79d57782-67f2-11e7-bb22-bf5df304e796 diag_el2.elf
