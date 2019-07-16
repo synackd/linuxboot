@@ -9,7 +9,7 @@
 EXTRACT_FW_OPTS = -s 0xc0055
 
 #dxe-compress := 0x4000000
-dxe-size     := 0x124016d
+dxe-size     := 0x9f0000 #0x85016d #0x124016d
 
 
 dxe-path := $(BUILD)/rom/0x00540055
