@@ -120,13 +120,13 @@ b1da0adf-4f77-4070-a88e-bffe1c60529a AMITSE
 f9f9e1e0-7949-4a6e-aa39-3fccffe71143 ConfigDxe
 a29a63e3-e4e7-495f-8a6a-07738300cbb3 AmiTcgPlatformDxe
 a14694e4-78df-4ef1-a118-7654ff6cfa9d IpmiSdrReader
-49264ce5-86cc-4879-ad4b-6a0da72daa2d MemInfo
-fc510ee7-ffdc-11d4-bd41-0080c73c8881 DXE apriori file
+#49264ce5-86cc-4879-ad4b-6a0da72daa2d MemInfo
+#fc510ee7-ffdc-11d4-bd41-0080c73c8881 DXE apriori file
 a19b1fe7-c1bc-49f8-875f-54a5d542443f CpuIo2Dxe
-c10194e7-deb2-4af4-9eee-bffde4d7d4c7 TimestampDxe
-f21695e9-1c28-474d-8e5f-4e88a4b08e8f CN99xxSmbiosDxe
+#c10194e7-deb2-4af4-9eee-bffde4d7d4c7 TimestampDxe
+#f21695e9-1c28-474d-8e5f-4e88a4b08e8f CN99xxSmbiosDxe
 f80697e9-7fd6-4665-8646-88e33ef71dfc SecurityStubDxe
-a2f436ea-a127-4ef8-957c-8048606ff670 SnpDxe
+#a2f436ea-a127-4ef8-957c-8048606ff670 SnpDxe
 43788beb-638f-434c-8a84-46d33a589e76 BmcElog
 #9fb1a1f3-3b71-4324-b39a-745cbb015fff Ip4Dxe
 4551f2f5-c684-4f27-936f-c7b04a5c5ff1 SecureBootDXE
