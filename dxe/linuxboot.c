@@ -286,9 +286,11 @@ linuxboot_start()
 		loaded_image->LoadOptions = cmdline;
 		loaded_image->LoadOptionsSize = sizeof(cmdline);
 
-		uintptr_t hdr = (uintptr_t) loaded_image->ImageBase;
-		*(uint32_t*)(hdr + 0x218) = (uint32_t)(uintptr_t) initrd_buffer;
-		*(uint32_t*)(hdr + 0x21c) = (uint32_t)(uintptr_t) initrd_length;
+		// Point kernel to initrd.
+		// See: https://www.kernel.org/doc/Documentation/x86/boot.txt
+		struct boot_params * base = (struct boot_params*) loaded_image->ImageBase;
+		base->hdr.ramdisk_image = (uint32_t)(uintptr_t) initrd_buffer;
+		base->hdr.ramdisk_size  = (uint32_t)(uintptr_t) initrd_length;
 	}
 
 
